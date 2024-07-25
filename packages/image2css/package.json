@@ -1,0 +1,33 @@
+{
+  "name": "@feop/image2css",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "watching dir|dirs(future) and auto generate css code, even upload image to cdn if needed;",
+  "author": "@onlinebirdman JP",
+  "license": "MIT",
+  "keywords": [
+    "image2css",
+    "img2css",
+    "imageToCSS",
+    "imagetocss"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/core/index.d.ts",
+      "default": "./dist/core/index.mjs"
+    },
+    "./vite": {
+      "types": "./dist/vite/index.d.ts",
+      "default": "./dist/vite/index.mjs"
+    }
+  },
+  "main": "./dist/core/index.mjs",
+  "module": "./dist/core/index.mjs",
+  "types": "./dist/core/index.d.ts",
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild --stub"
+  },
+  "dependencies": {}
+}

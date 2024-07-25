@@ -1,0 +1,125 @@
+{
+  "images": [
+    {
+      "cssPath": "src/assets/imgs/pic11.png",
+      "hash": "8fede0349eeccb618859223c891225e9",
+      "filename": "pic11",
+      "width": 690,
+      "height": 433,
+      "ext": "png",
+      "filenameExt": "png",
+      "size": 1195080,
+      "route": "pic11.png",
+      "uid": "c6f33d98bace40efec3a07b25108a2c9",
+      "url": ""
+    },
+    {
+      "cssPath": "src/assets/imgs/pic111.png",
+      "hash": "8fede0349eeccb618859223c891225e9",
+      "filename": "pic111",
+      "width": 690,
+      "height": 433,
+      "ext": "png",
+      "filenameExt": "png",
+      "size": 1195080,
+      "route": "pic111.png",
+      "uid": "783fe903c53c10bf1a48dfbc73dc956b",
+      "url": ""
+    },
+    {
+      "cssPath": "src/assets/imgs/pic12.png",
+      "hash": "3ebc183fd28cda6559f5fa0ef6a9abed",
+      "filename": "pic12",
+      "width": 630,
+      "height": 375,
+      "ext": "png",
+      "filenameExt": "png",
+      "size": 945000,
+      "route": "pic12.png",
+      "uid": "77b723cc7f5e831c223c199926dfd3b5",
+      "url": ""
+    },
+    {
+      "cssPath": "src/assets/imgs/pic13.png",
+      "hash": "8de5a30f6a371baf6996f026533e2447",
+      "filename": "pic13",
+      "width": 690,
+      "height": 433,
+      "ext": "png",
+      "filenameExt": "png",
+      "size": 1195080,
+      "route": "pic13.png",
+      "uid": "e819ca448631534aea04884e8d82d909",
+      "url": ""
+    },
+    {
+      "cssPath": "src/assets/imgs/pic9.png",
+      "hash": "24f8462eba8d18e937d504ca777cc2fc",
+      "filename": "pic9",
+      "width": 690,
+      "height": 756,
+      "ext": "png",
+      "filenameExt": "png",
+      "size": 2086560,
+      "route": "pic9.png",
+      "uid": "cfff653a85351e315c9d696a58d8b9f9",
+      "url": ""
+    },
+    {
+      "cssPath": "src/assets/imgs/a/pic9.png",
+      "hash": "24f8462eba8d18e937d504ca777cc2fc",
+      "filename": "pic9",
+      "width": 690,
+      "height": 756,
+      "ext": "png",
+      "filenameExt": "png",
+      "size": 2086560,
+      "route": "a/pic9.png",
+      "uid": "5ffa1f7de6dc6444b23618b67f446e16",
+      "url": ""
+    },
+    {
+      "cssPath": "src/assets/imgs/a/b/pic9.jpeg",
+      "hash": "24f8462eba8d18e937d504ca777cc2fc",
+      "filename": "pic9",
+      "width": 690,
+      "height": 756,
+      "ext": "png",
+      "filenameExt": "jpeg",
+      "size": 2086560,
+      "route": "a/b/pic9.jpeg",
+      "uid": "19307befb24a20240de0afc9bb51e865",
+      "url": ""
+    },
+    {
+      "cssPath": "src/assets/imgs/a/b/pic9.png",
+      "hash": "24f8462eba8d18e937d504ca777cc2fc",
+      "filename": "pic9",
+      "width": 690,
+      "height": 756,
+      "ext": "png",
+      "filenameExt": "png",
+      "size": 2086560,
+      "route": "a/b/pic9.png",
+      "uid": "6cf0347d30b5f18784bc3964eceef46f",
+      "url": ""
+    }
+  ],
+  "cdnImages": [
+    {
+      "imageHash": "8fede0349eeccb618859223c891225e9",
+      "imageUid": "c6f33d98bace40efec3a07b25108a2c9",
+      "url": "remote:pic11.png"
+    },
+    {
+      "imageHash": "3ebc183fd28cda6559f5fa0ef6a9abed",
+      "imageUid": "77b723cc7f5e831c223c199926dfd3b5",
+      "url": "remote:pic12.png"
+    },
+    {
+      "imageHash": "8de5a30f6a371baf6996f026533e2447",
+      "imageUid": "ee0f08ab65725a7887c3a3e606d53938",
+      "url": "remote:pic13 copy.png"
+    }
+  ]
+}

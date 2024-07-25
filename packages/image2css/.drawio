@@ -1,0 +1,136 @@
+<mxfile host="65bd71144e">
+    <diagram id="eGt_1kvjytixclB5qYfC" name="Page-1">
+        <mxGraphModel dx="1007" dy="1759" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Image2cssConfig&lt;br&gt;&lt;b&gt;image2css.config.ts&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="220" width="120" height="337" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="监听目录：&lt;br&gt;&lt;b&gt;dirs?: string | string[] = './src/assets/imgs'&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="220" width="270" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="图片上传到cdn：&lt;br&gt;&lt;b&gt;uploader(file:File |File[]):imgSrc&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="280" width="270" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="核心流程" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="30" width="120" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="监听图片目录&lt;br&gt;下图片的变化&lt;br&gt;watcher" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="30" width="110" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="新增&lt;br&gt;onAdd" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="30" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="删除&lt;br&gt;onDelete" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="90" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="变化 = 删除 + 新增&lt;br&gt;onUpdate" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="150" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="图片uid = 图片名称+ 图片md5内容" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="-140" width="230" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" style="edgeStyle=none;html=1;" parent="1" source="13" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="图片上传器：&lt;b&gt;以md5(图片)为key&lt;/b&gt;&lt;br&gt;缓存图片的远程链接" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="-80" width="230" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="调用代码生成器&lt;br&gt;生成完整的css代码" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="393" y="30" width="130" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="单个图片的style模板：&lt;br&gt;&lt;b&gt;styleCodeGenerator(ImageMeta): CssCodestring&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="350" width="270" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="images.lock.json&lt;br&gt;ImageDirMeta || ImageDirMeta[]&lt;br&gt;&lt;br&gt;image2css.css&lt;br&gt;&lt;br&gt;Images.ts" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="541" y="30" width="200" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="path: 相对于lockjson" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="289" y="592" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="route: 相对dir的路径" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="289" y="632" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="md5" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="289" y="672" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="uid: filename_md5" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="289" y="712" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;CdnImage&lt;br&gt;远程图片对象&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="26" y="895" width="120" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="id: ImageMeta['uid']" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="156" y="895" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="src: string" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="156" y="935" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="width" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="159" y="592" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="size" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="159" y="672" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" value="ext" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="159" y="632" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="filename" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="159" y="752" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="height" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="159" y="712" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;ImageMeta&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="26" y="592" width="120" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" value="cdnImages: CdnImage[] cdn图片列表" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="159" y="847" width="290" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" value="images: ImageMeta[] 全部图片的基础信息" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="159" y="807" width="290" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;ImageDirMeta&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="26" y="807" width="120" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="还不知道怎么&lt;br&gt;实现的功能" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="458" y="221" width="120" height="235" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="生成的css文件路径：&lt;br&gt;&lt;b&gt;output?: string = '&lt;/b&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;dir/${&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;outputFile&lt;/b&gt;}&lt;/b&gt;&lt;b&gt;'&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="423" width="270" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="图片命名合法化" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="586" y="220" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="style 智能提示&lt;br&gt;输入img-就会有提示" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="586" y="280" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="图片meta信息快捷访问器&lt;br&gt;Images.xxx" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="586" y="343" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" value="vscode插件" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="586" y="406" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="生成的css文件名（含后缀）：&lt;br&gt;&lt;b&gt;outputFile?: string = 'image2css.css'&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="497" width="270" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="三方库汇总" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="458" y="483" width="120" height="235" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;chokidar: 文件监听&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="586" y="483" width="165" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;span style=&quot;color: rgb(163, 21, 21); text-align: left;&quot;&gt;fast-glob&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="586" y="542" width="165" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;jimp&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="586" y="601" width="165" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;md5&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="586" y="664" width="165" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

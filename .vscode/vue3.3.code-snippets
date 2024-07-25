@@ -1,0 +1,37 @@
+{
+  "Vue3.3+defineOptions快速生成模板": {
+    "scope": "vue",
+    "prefix": "Vue3.3+",
+    "body": [
+      "<script setup lang='ts'>",
+      "</script>\n",
+      "<template>",
+      "\t<div>test$1</div>",
+      "</template>\n",
+      "<style lang='less' scoped>\n",
+      "</style>",
+      "$2"
+    ],
+    "description": "Vue3.3+defineOptions快速生成模板"
+  },
+  "vue-template-vfor": {
+    "prefix": "vfor",
+    "scope": [
+      "vue-html",
+      "html"
+    ], // 可能只需要"vue-html"，根据你的具体需求和VSCode Vue插件配置
+    "body": [
+      "<template v-for=\"($item, $index) in $DATA\">",
+      "\t<!-- 自定义循环体代码 -->",
+      "</template>",
+    ],
+    "description": "Vue template v-for snippet"
+  },
+  "View Element": {
+    "prefix": "vw",
+    "body": [
+      "<view>$0</view>"
+    ],
+    "description": "Emmet abbreviation for view element"
+  }
+}

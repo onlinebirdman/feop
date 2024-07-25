@@ -1,0 +1,67 @@
+
+      
+      .img-btn-go-cash {
+        width: 149px;
+        height: 48px;
+        display: block;
+        position: relative;
+        background-image: url('remote:btn-go-cash.png');
+        background-size: 149px 48px;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+      }
+    
+
+      .img-btn-go-receive {
+        width: 151px;
+        height: 54px;
+        display: block;
+        position: relative;
+        background-image: url('remote:btn-go-receive.png');
+        background-size: 151px 54px;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+      }
+    
+
+      .img-btn-share-post {
+        width: 300px;
+        height: 80px;
+        display: block;
+        position: relative;
+        background-image: url('remote:btn-share-post.png');
+        background-size: 300px 80px;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+      }
+    
+
+      .img-btn-sub {
+        width: 260px;
+        height: 80px;
+        display: block;
+        position: relative;
+        background-image: url('remote:btn-sub.png');
+        background-size: 260px 80px;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+      }
+    
+
+      .img-btn-go-cash {
+        width: 149px;
+        height: 48px;
+        display: block;
+        position: relative;
+        background-image: url('remote:btn-go-cash.png');
+        background-size: 149px 48px;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+      }
+    
+    

@@ -1,0 +1,81 @@
+{
+  "images": [
+    {
+      "cssPath": "imgs/btn-go-cash.png",
+      "hash": "4e8f28ec228fd4418d913e958e3423f0",
+      "filename": "btn-go-cash",
+      "width": 149,
+      "height": 48,
+      "ext": "png",
+      "size": 28608,
+      "route": "btn-go-cash.png",
+      "uid": "73890da47126666493f842e503e0a80a"
+    },
+    {
+      "cssPath": "imgs/btn-go-receive.png",
+      "hash": "98a3180fe1e7b7bf10d6d585fdd739fb",
+      "filename": "btn-go-receive",
+      "width": 151,
+      "height": 54,
+      "ext": "png",
+      "size": 32616,
+      "route": "btn-go-receive.png",
+      "uid": "de867d0bcee503cdf60e9f66211343b9"
+    },
+    {
+      "cssPath": "imgs/btn-share-post.png",
+      "hash": "4178f04c88aeda9575f18f7a9d2861f0",
+      "filename": "btn-share-post",
+      "width": 300,
+      "height": 80,
+      "ext": "png",
+      "size": 96000,
+      "route": "btn-share-post.png",
+      "uid": "5a9d558d5c3d273f866449fe8fb2310a"
+    },
+    {
+      "cssPath": "imgs/btn-sub.png",
+      "hash": "de202f0d2c44aaeb61bb32e61d4952ed",
+      "filename": "btn-sub",
+      "width": 260,
+      "height": 80,
+      "ext": "png",
+      "size": 83200,
+      "route": "btn-sub.png",
+      "uid": "ca03c1a21670c9c2742aabfaac814de6"
+    },
+    {
+      "cssPath": "imgs/local/btn-go-cash.png",
+      "hash": "4e8f28ec228fd4418d913e958e3423f0",
+      "filename": "btn-go-cash",
+      "width": 149,
+      "height": 48,
+      "ext": "png",
+      "size": 28608,
+      "route": "local/btn-go-cash.png",
+      "uid": "3dd78547b579fe4f4eda581eb4cb3960"
+    }
+  ],
+  "cdnImages": [
+    {
+      "imageHash": "4e8f28ec228fd4418d913e958e3423f0",
+      "imageUid": "73890da47126666493f842e503e0a80a",
+      "url": "remote:btn-go-cash.png"
+    },
+    {
+      "imageHash": "98a3180fe1e7b7bf10d6d585fdd739fb",
+      "imageUid": "de867d0bcee503cdf60e9f66211343b9",
+      "url": "remote:btn-go-receive.png"
+    },
+    {
+      "imageHash": "4178f04c88aeda9575f18f7a9d2861f0",
+      "imageUid": "5a9d558d5c3d273f866449fe8fb2310a",
+      "url": "remote:btn-share-post.png"
+    },
+    {
+      "imageHash": "de202f0d2c44aaeb61bb32e61d4952ed",
+      "imageUid": "ca03c1a21670c9c2742aabfaac814de6",
+      "url": "remote:btn-sub.png"
+    }
+  ]
+}

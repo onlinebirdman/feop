@@ -1,0 +1,27 @@
+{
+  "name": "feop",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "frontend one piece",
+  "author": "@onlinebirdman",
+  "license": "ISC",
+  "keywords": [],
+  "exports": {
+    ".": {
+      "types": "./dist/core/index.d.ts",
+      "default": "./dist/core/index.mjs"
+    },
+    "./vite": {
+      "types": "./dist/vite/index.d.ts",
+      "default": "./dist/vite/index.mjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/core/index.mjs",
+  "scripts": {
+    "build": "npx unbuild",
+    "stub": "unbuild --stub"
+  },
+  "dependencies": {}
+}
