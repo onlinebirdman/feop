@@ -2,7 +2,7 @@
   "name": "feop",
   "type": "module",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "description": "",
   "author": "@onlinebirdman",
   "license": "ISC",
@@ -13,25 +13,16 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.21.1",
-    "@feop/image2css": "workspace:*",
     "@types/fs-extra": "^11.0.4",
     "@types/lodash": "^4.17.7",
     "@types/md5": "^2.3.5",
     "@types/node": "^20.14.9",
+    "bumpp": "^9.4.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.5.0",
     "eslint-plugin-format": "^0.1.2",
-    "fast-glob": "^3.3.2",
-    "form-data": "^4.0.0",
-    "fs-extra": "^11.2.0",
-    "jimp": "^0.22.12",
-    "lodash": "^4.17.21",
-    "md5": "^2.3.0",
-    "nodemon": "^3.1.4",
-    "ora": "^8.0.1",
-    "p-queue": "^8.0.1",
-    "ts-node": "^10.9.2",
-    "unbuild": "^2.0.0",
-    "unconfig": "^0.4.4"
+    "feop": "workspace:*",
+    "image2css": "workspace:*",
+    "unbuild": "^2.0.0"
   }
 }

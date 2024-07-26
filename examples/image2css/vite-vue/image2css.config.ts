@@ -1,6 +1,5 @@
-import { defineConfig } from '@feop/image2css'
+import { defineConfig } from 'image2css'
 
 export default defineConfig({
   enableWriteCssFile: false,
-
 })

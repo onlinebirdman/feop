@@ -1,10 +1,19 @@
 {
-  "name": "@feop/image2css",
+  "name": "image2css",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0-beta.1",
+  "private": false,
   "description": "watching dir|dirs(future) and auto generate css code, even upload image to cdn if needed;",
   "author": "@onlinebirdman JP",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onlinebirdman/feop",
+    "directory": "packages/image2css"
+  },
+  "bugs": {
+    "url": "https://github.com/onlinebirdman/feop/issues"
+  },
   "keywords": [
     "image2css",
     "img2css",
@@ -25,9 +34,22 @@
   "main": "./dist/core/index.mjs",
   "module": "./dist/core/index.mjs",
   "types": "./dist/core/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "unbuild",
-    "stub": "unbuild --stub"
+    "stub": "unbuild --stub",
+    "pub": "bump && npm publish"
   },
-  "dependencies": {}
+  "dependencies": {
+    "fast-glob": "^3.3.2",
+    "fs-extra": "^11.2.0",
+    "jimp": "^0.22.12",
+    "lodash": "^4.17.21",
+    "md5": "^2.3.0",
+    "ora": "^8.0.1",
+    "p-queue": "^8.0.1",
+    "unconfig": "^0.4.4"
+  }
 }
