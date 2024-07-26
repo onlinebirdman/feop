@@ -1,7 +1,7 @@
 {
   "name": "image2css",
   "type": "module",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "private": false,
   "description": "watching dir|dirs(future) and auto generate css code, even upload image to cdn if needed;",
   "author": "@onlinebirdman JP",
@@ -40,7 +40,7 @@
   "scripts": {
     "build": "unbuild",
     "stub": "unbuild --stub",
-    "pub": "bump && npm publish"
+    "pub": "bump --tag --commit --push"
   },
   "dependencies": {
     "fast-glob": "^3.3.2",
