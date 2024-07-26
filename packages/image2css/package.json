@@ -40,10 +40,7 @@
   "scripts": {
     "build": "unbuild",
     "stub": "unbuild --stub",
-    "commit-fix": "bump --commit --push",
-    "commit-feat": "bump --tag --commit --push",
-    "pub-fix": "pnpm run commit-fix && npm publish",
-    "pub-feat": "pnpm run commit-feat && npm publish"
+    "pub": "bump && npm publish"
   },
   "dependencies": {
     "fast-glob": "^3.3.2",

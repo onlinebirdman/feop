@@ -1,0 +1,6 @@
+{
+  "originUrl": "your swagger url",
+  "templatePath": "./pontTemplate",
+  "outDir": "../src/api",
+  "surrounding": "typeScript"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "pont-preset",
+  "type": "module",
+  "version": "1.0.1-beta.1",
+  "description": "",
+  "author": "birdman JP",
+  "license": "ISC",
+  "keywords": [],
+  "main": "./dist/index.mjs",
+  "bin": {
+    "pont-preset": "./dist/index.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild --stub",
+    "pub": "bump && npm publish"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "fs-extra": "^11.2.0"
+  }
+}
