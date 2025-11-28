@@ -1,5 +1,5 @@
 {
-  "name": "cli",
+  "name": "op-cli",
   "type": "module",
   "version": "1.0.0",
   "private": true,
@@ -9,7 +9,7 @@
   "keywords": [],
   "main": "./dist/index.mjs",
   "bin": {
-    "ok": "./dist/index.mjs"
+    "op111": "./dist/index.mjs"
   },
   "files": [
     "dist"

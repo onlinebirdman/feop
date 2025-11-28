@@ -42,6 +42,7 @@ export function createSingleLineLogger() {
  * @returns filepaths [./a/[path]/[filename-a].[ext], ./a/[path]/[filename-b].[ext]]
  */
 export async function findImages(targetDir: string): Promise<string[]> {
+  console.log(123456)
   const patterns = [`${targetDir}/**/*.{png,jpg,jpeg,gif}`] // 支持的图片扩展名
   try {
     const images = await fastGlob(patterns, { dot: false })

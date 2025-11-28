@@ -1,36 +1,60 @@
+#!/usr/bin/env node
+
+import { promises as fs } from 'node:fs'
 import path from 'node:path'
-import process from 'node:process'
-import fs from 'fs-extra'
-import { program } from 'commander'
+import { Command } from 'commander'
 
-// 初始化命令
+// 定义模板目录
+const templateDir = path.resolve(__dirname, './template')
+
+// 初始化 Commander 实例
+const program = new Command()
+
+// 定义命令行工具名称和版本
 program
-  .command('init')
-  .description('Initialize the project configuration')
-  .action(() => {
-    const configPath = path.join(process.cwd(), 'config.json')
-    console.log('process.cwd()', process.cwd())
-    // 创建.pont文件夹及相关文件
-    createFiles(path.join(process.cwd())) // 复制
-    // 修改gitignore 添加.pont
-    rewriteGitignore(process.cwd())
-  })
+  .name('pont-preset')
+  .version('1.0.0')
+  .description('Generate preset configuration files from templates for Pont')
 
-program.parse(process.argv)
+// 设置默认执行命令
+program.action(async () => {
+  try {
+    // 读取 template 文件夹下的所有文件
+    const files = await fs.readdir(templateDir)
 
-function rewriteGitignore(p: string) {
-  // 确保.pont 不重复
-  if (fs.existsSync(path.join(p, '.gitignore'))) {
-    const gitignore = fs.readFileSync(path.join(p, '.gitignore'), 'utf-8')
-    if (gitignore.includes('.pont'))
-      return
+    for (const file of files) {
+      // 匹配以 .tmp 结尾的模板文件
+      if (file.includes('.tmp')) {
+        const targetFile = file.replace('.tmp', '') // 去掉 .tmp
+        const targetPath = path.resolve(process.cwd(), `.pont/${targetFile}`) // 在当前工作目录生成文件
+
+        // 检查目标文件是否已存在
+        if (!(await fileExists(targetPath))) {
+          const templateContent = await fs.readFile(path.join(templateDir, file), 'utf8')
+          await fs.writeFile(targetPath, templateContent, 'utf8')
+          console.log(`Created ${targetFile} at ${targetPath}`)
+        }
+        else {
+          console.log(`${targetFile} already exists`)
+        }
+      }
+    }
   }
-  fs.appendFileSync(path.join(p, '.gitignore'), '\n.pont')
+  catch (error) {
+    console.error('Error creating files:', error)
+  }
+})
+
+// 工具函数：检查文件或文件夹是否存在
+async function fileExists(filepath: string): Promise<boolean> {
+  try {
+    await fs.access(filepath)
+    return true
+  }
+  catch {
+    return false
+  }
 }
 
-function createFiles(p: string) {
-  const target = path.join(p, '.pont')
-  if (fs.existsSync(target) && fs.readdirSync(target).length > 0)
-    return
-  fs.copySync('./src/preset', target) // 复制
-}
+// 解析命令行参数
+program.parse(process.argv)

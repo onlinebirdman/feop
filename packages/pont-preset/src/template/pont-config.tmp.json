@@ -1,5 +1,5 @@
 {
-  "originUrl": "your swagger url",
+  "originUrl": "",
   "templatePath": "./pontTemplate",
   "outDir": "../src/api",
   "surrounding": "typeScript"
