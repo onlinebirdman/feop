@@ -42,6 +42,9 @@
     "stub": "unbuild --stub",
     "pub": "bump && npm publish"
   },
+  "peerDependencies": {
+    "vite": "^5.0.0"
+  },
   "dependencies": {
     "fast-glob": "^3.3.2",
     "fs-extra": "^11.2.0",
@@ -51,5 +54,8 @@
     "ora": "^8.0.1",
     "p-queue": "^8.0.1",
     "unconfig": "^0.4.4"
+  },
+  "devDependencies": {
+    "vite": "5.2.8"
   }
 }

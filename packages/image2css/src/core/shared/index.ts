@@ -1,8 +1,15 @@
 import { createHash } from 'node:crypto'
+import path from 'node:path'
 import { isFunction as _isFunction, uniqBy as _uniqBy } from 'lodash'
 import ora from 'ora'
 import fastGlob from 'fast-glob'
 import PQueue from 'p-queue'
+
+/**
+ *
+ * @param targetDir 目标目录 [path]/[dir]
+ * @returns filepaths [./a/[path]/[filename-a].[ext], ./a/[path]/[filename-b].[ext]]
+ */
 
 export function uniqBy<T>(array: T[], iteratee: (item: T) => unknown): T[] {
   const seen = new Map<unknown, T>()
@@ -37,13 +44,15 @@ export function createSingleLineLogger() {
 }
 
 /**
- *
- * @param targetDir 目标目录 [path]/[dir]
- * @returns filepaths [./a/[path]/[filename-a].[ext], ./a/[path]/[filename-b].[ext]]
+ * 在指定目录中查找所有图片文件
+ * @param targetDir 目标目录路径
+ * @returns 找到的图片文件路径数组
  */
 export async function findImages(targetDir: string): Promise<string[]> {
-  console.log(123456)
-  const patterns = [`${targetDir}/**/*.{png,jpg,jpeg,gif}`] // 支持的图片扩展名
+  // 使用path.join确保跨平台兼容性，避免路径分隔符问题
+  const pattern = path.join(targetDir, '**', '*.{png,jpg,jpeg,gif}')
+  const patterns = [pattern]
+
   try {
     const images = await fastGlob(patterns, { dot: false })
     return images
